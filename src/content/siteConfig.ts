@@ -29,10 +29,8 @@ export type ClassExperience = {
  * - Set a class status to "open", "waitlist", or "closed".
  * - Never put Zoom links, registrant data, API keys, or private notes here.
  *
- * IMPORTANT PAYMENT ATTRIBUTION:
- * If these classes are separate personal offerings by Shaykh Mendes, update
- * brand.legalText and the Zelle recipient so the page does not imply nonprofit
- * payment collection.
+ * - The instructor bio and profile link below mirror Marhama Village's public
+ *   Team page; update them if that source page changes.
  */
 export const siteConfig = {
   brand: {
@@ -42,40 +40,26 @@ export const siteConfig = {
       "Online formation experiences rooted in Qur’an, Sunnah, and the Islamic tradition of human formation.",
     legalText:
       "Marhama Institute is an educational initiative of Marhama Village, a 501(c)(3) nonprofit organization.",
-    contactEmail: "UPDATE_ME@example.com",
+    contactEmail: "kfranklin@greenmedicalfoundation.org",
   },
   hero: {
     eyebrow: "Marhama Institute Presents",
     title: "Two Online Formation Experiences with Shaykh Adeyinka Mendes",
     description:
       "Join Shaykh Adeyinka Mendes for two focused online experiences rooted in the Qur’an, Sunnah, and the Islamic tradition of human formation. Attend either class individually or register for both.",
-    image: "/assets/marriage-class-flyer.jpg",
-    imageAlt: "The Prophetic Art of Marriage flyer featuring Shaykh Adeyinka Mendes",
   },
   registration: {
     // Add the main Google Form URL here. Optional prefilled links below override it.
-    generalGoogleFormUrl: "",
+    generalGoogleFormUrl: "https://forms.gle/ra96eccdxDQ7Qs5V7",
     marriageGoogleFormUrl: "",
     mindfulnessGoogleFormUrl: "",
     bothClassesGoogleFormUrl: "",
-    futureAnnouncementsUrl: "",
     note: "The registration form opens in Google Forms.",
-  },
-  payment: {
-    zelleRecipient: "UPDATE_ME",
-    zelleRecipientName: "UPDATE_ME",
-    amountPerClass: 100,
-    memoFormat: "MENDEZ-[LAST NAME]-[CLASS]",
-    qrCodeImage: "",
-    qrCodeAlt: "Zelle payment QR code",
   },
   instructor: {
     name: "Shaykh Adeyinka Mendes",
-    bio: "Shaykh Adeyinka Mendes is a teacher, spiritual guide, community leader, and founder of Marhama Village. His work centers on Islamic spiritual formation, prophetic character, community healing, and helping students cultivate lives rooted in remembrance, mercy, and service.",
-    portrait: "/assets/marriage-class-flyer.jpg",
-    portraitAlt: "Class flyer featuring Shaykh Adeyinka Mendes",
-    videoUrl: "",
-    socialLinks: [] as { label: string; url: string }[],
+    bio: "Adeyinka Muhammad Mendes is the Founder & Resident Scholar of Marhama Village, a home for wellness and sacred living in Houston and beyond. His teaching brings together Islamic spiritual formation, prophetic character, and the work of building compassionate community.",
+    sourceUrl: "https://www.marhamavillage.org/team",
   },
   classes: [
     {
@@ -141,30 +125,4 @@ export const siteConfig = {
       ],
     },
   ] satisfies ClassExperience[],
-  // Add image, video, or link items here. This section stays hidden while empty.
-  media: [
-    {
-      title: "The Prophetic Art of Marriage class flyer",
-      type: "image",
-      url: "/assets/marriage-class-flyer.jpg",
-      classId: "marriage",
-      visible: true,
-      sortOrder: 1,
-    },
-    {
-      title: "Returning to the True You class flyer",
-      type: "image",
-      url: "/assets/mindfulness-class-flyer.jpg",
-      classId: "mindfulness",
-      visible: true,
-      sortOrder: 2,
-    },
-  ] as {
-    title: string;
-    type: "image" | "video" | "link";
-    url: string;
-    classId: ClassId | "general";
-    visible: boolean;
-    sortOrder: number;
-  }[],
 };
