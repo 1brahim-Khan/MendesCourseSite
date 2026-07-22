@@ -122,7 +122,7 @@ export default function Home() {
           <p className="eyebrow">Your teacher</p>
           <h2>About {siteConfig.instructor.name}</h2>
           <p>{siteConfig.instructor.bio}</p>
-          <a className="text-link" href={siteConfig.instructor.sourceUrl} target="_blank" rel="noreferrer">Read his profile on Marhama Village <span aria-hidden="true">↗</span></a>
+          <a className="text-link" href={siteConfig.instructor.sourceUrl} target="_blank" rel="noreferrer">Read more about Marhama Village <span aria-hidden="true">↗</span></a>
         </div>
       </section>
 

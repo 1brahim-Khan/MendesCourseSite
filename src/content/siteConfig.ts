@@ -59,7 +59,7 @@ export const siteConfig = {
   instructor: {
     name: "Shaykh Adeyinka Mendes",
     bio: "Adeyinka Muhammad Mendes is the Founder & Resident Scholar of Marhama Village, a home for wellness and sacred living in Houston and beyond. His teaching brings together Islamic spiritual formation, prophetic character, and the work of building compassionate community.",
-    sourceUrl: "https://www.marhamavillage.org/team",
+    sourceUrl: "https://www.marhamavillage.org/about-us",
   },
   classes: [
     {
